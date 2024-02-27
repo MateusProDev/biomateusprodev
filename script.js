@@ -25,11 +25,16 @@ btnHobbies.onclick = myHobbies;
 fetch('http://localhost:3000/products')
 .then(res => res.json())
 .then(data => {
-    let productsList = document.getElementById('productsList')
-    data.forEach(product => {
-        let li = document.createElement('li')
-        li.textContent = `(${product.job})`
-        productsList.appendChild(li)
+    let productsList = document.getElementById('productsList');
+
+    // Filtrando os produtos com base na propriedade 'productA'
+    let dataProductsA = data.filter(product => product.name === 'productB'); // Substitua 'valorDesejado' pelo valor que você está procurando.
+
+    // Iterando sobre os produtos filtrados e criando elementos de lista para cada um deles
+    dataProductsA.forEach(product => {
+        let li = document.createElement('li');
+        li.textContent = `${product.job}`;
+        productsList.appendChild(li);
     });
 })
-.catch(error => console.error(error));
+.catch(error => console.error('Esse é o error:' + error));
