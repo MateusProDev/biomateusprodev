@@ -23,6 +23,17 @@ img:hover{
 
 h2 {
     color: #fff;
+    font-family: "Coda", system-ui;
+  font-weight: 800;
+  font-style: normal;
+}
+h3 {
+    color: #fff;
+    font-family: "Coda", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #0055af;
+    margin: -10px 0 20px 0;
 }
 
 button {
@@ -46,4 +57,17 @@ button:hover {
 p {
     margin-bottom: 20px;
     color: #fff;
+}
+
+/*Estilo da lista*/
+
+#productsList{
+    color: #0055af;
+}
+#productsList li{
+    display: block;
+    margin:-40px 0 -40px -40px;
+    font-family: "Coda", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }

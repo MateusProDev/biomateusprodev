@@ -9,7 +9,7 @@ const myGeral = () => {
 
 const myComida = () => {
     sobre.innerHTML= '<h3>As tecnologias que domino são:</h3>'+
-    '<br><br>' + 'Javascript, React.js, Node.js, Bootstrap, SASS, jQuery, CSS, HTML, GitHub, NPM, Firebase, API, Responsividade, Acessibilidade e CyberSecurity.';
+    '<br>' + 'Javascript, React.js, Node.js, Bootstrap, SASS, jQuery, CSS, HTML, GitHub, NPM, Firebase, API, Responsividade, Acessibilidade e CyberSecurity.';
 };
 
 const myHobbies = () => {
@@ -19,3 +19,17 @@ const myHobbies = () => {
 btnGeral.onclick = myGeral;
 btnComida.onclick = myComida;
 btnHobbies.onclick = myHobbies;
+
+//chamada à API
+
+fetch('http://localhost:3000/products')
+.then(res => res.json())
+.then(data => {
+    let productsList = document.getElementById('productsList')
+    data.forEach(product => {
+        let li = document.createElement('li')
+        li.textContent = `(${product.job})`
+        productsList.appendChild(li)
+    });
+})
+.catch(error => console.error(error));
