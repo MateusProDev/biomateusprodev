@@ -24,7 +24,7 @@ img:hover{
 h2 {
     color: #fff;
     font-family: "Coda", system-ui;
-    font-weight: 800;
+    font-weight: 1000;
     font-style: normal;
     text-shadow: 4px 4px 5px #0000005c;;
 }
@@ -94,3 +94,37 @@ video {
     padding-top: 50px;
 }
 
+/* Estilo para a animação de letras */
+@keyframes revealName {
+    from {
+        width: 0;
+    }
+    to {
+        width: auto;
+    }
+}
+
+/* Estilo para cada letra do nome */
+#nameAnimation span {
+    display: inline-block;
+    animation: revealName 0.5s ease forwards;
+    vertical-align: top; /* Alinha as letras no topo */
+    color: #fff;
+    padding: 0 1px;
+}
+
+/* Estilo para o elemento que conterá o nome */
+#nameAnimation {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: -9px; /* Ajusta o espaçamento para cima */
+    background-color: #0056b3;
+    padding: 0 10px;
+}
+
+
+/* Adicione esta classe para ativar a animação */
+.reveal {
+    animation: revealName 0.5s ease forwards;
+}
