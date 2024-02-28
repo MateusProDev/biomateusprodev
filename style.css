@@ -83,6 +83,7 @@ video {
     height: 100vh;
     object-fit: cover;
     z-index: -1;
+    background-position: left;
 }
 .content {
     position: relative;

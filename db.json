@@ -1,9 +1,0 @@
-{
-    "products": [
-        {"id": 1, "name": "productA", "job": "Front-End"},
-        {"id": 2, "name": "productB", "job": "Designer"},
-        {"id": 3, "name": "productA", "job": "Front-End"},
-        {"id": 4, "name": "productB", "job": "Designer"},
-        {"id": 5, "name": "productA", "job": "Front-End"}
-    ]
-}
