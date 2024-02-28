@@ -32,7 +32,6 @@ h3 {
     font-family: "Coda", system-ui;
     font-weight: 400;
     font-style: normal;
-    color: #0055af;
     margin: -10px 0 20px 0;
 }
 
@@ -62,7 +61,7 @@ p {
 /*Estilo da lista*/
 
 #productsList{
-    color: #0055af;
+    color: #ffffff;
 }
 #productsList li{
     display: block;
