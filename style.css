@@ -14,7 +14,7 @@ body {
 img{
     width: 200px;
     border-radius: 50%;
-    box-shadow: 8px 8px 1px #000;
+    box-shadow: 4px 4px 5px #0000005c;
 }
 
 img:hover{
@@ -46,7 +46,7 @@ button {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    box-shadow: 4px 4px 4px #33333333;
+    box-shadow: 4px 4px 4px #0000006e;
 }
 
 button:hover {
@@ -70,3 +70,26 @@ p {
     font-weight: 400;
     font-style: normal;
 }
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    font-family: 'Coda', sans-serif;
+    padding-top: 50px;
+}
+
